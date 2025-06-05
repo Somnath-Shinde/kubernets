@@ -1,0 +1,15 @@
+1.minikube start --nodes 3 -p multinode-demo
+2.kubectl get nodes
+3.minikube -p multinode-demo docker-env | Invoke-Expression ; docker build -t node-app:latest .
+4.kubectl apply -f k8s/deployment.yaml ; kubectl apply -f k8s/service.yaml
+5.kubectl get pods -o wide ; kubectl get services
+6.minikube -p multinode-demo service node-app-service
+
+cleaning
+1.minikube delete -p multinode-demo
+
+// threats
+Minikube not being installed
+Docker not running
+Insufficient system resources for running 3 nodes
+Network connectivity issues

@@ -1,0 +1,12 @@
+{
+  "name": "k8s-multinode-demo",
+  "version": "1.0.0",
+  "description": "Demo application for Kubernetes multi-node setup",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
